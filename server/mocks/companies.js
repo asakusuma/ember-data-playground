@@ -17,7 +17,11 @@ module.exports = function(app) {
 
   companiesRouter.get('/', function(req, res) {
     res.send({
-      'data': getCompanies()
+      'data': getCompanies(),
+      'meta': {
+        copyright: 'LinkedIn',
+        classification: 'Biznass'
+      }
     });
   });
 

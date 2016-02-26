@@ -17,7 +17,10 @@ module.exports = function(app) {
 
   membersRouter.get('/', function(req, res) {
     res.send({
-      'data': getMembers()
+      'data': getMembers(),
+      'meta': {
+        membercount: 50
+      }
     });
   });
 

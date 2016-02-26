@@ -3,7 +3,7 @@ import Ember from 'ember';
 export default Ember.Route.extend({
   model() {
     return {
-      members: this.store.peekAll('member')
+      members: this.store.findAll('member')
     };
   }
 });
