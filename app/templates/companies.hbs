@@ -1,0 +1,9 @@
+<h3>{{model.name}}</h3>
+
+Employes
+
+{{#each model.members as |member index|}}
+  {{#link-to 'members' member}}{{member.firstName}}{{/link-to}}
+{{/each}}
+
+{{outlet}}

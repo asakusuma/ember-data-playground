@@ -1,7 +1,7 @@
 {{#each model.members as |member index|}}
   <div>
     <div>
-      <b>Name:</b> {{member.firstName}} {{member.lastName}}
+      <b>Name:</b> {{#link-to "members" member}}{{member.firstName}} {{member.lastName}}{{/link-to}}
     </div>
     <div>
       <b>Company:</b> {{member.company.name}}
