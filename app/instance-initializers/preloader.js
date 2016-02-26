@@ -6,7 +6,8 @@ export function initialize(applicationInstance) {
   let store = applicationInstance.__container__.lookup('service:store');
   for (let t = 0; t < data.length; t++) {
     store.push({
-      data: data[t].serializedRecords
+      data: data[t].serializedRecords,
+      meta: data[t].metadata
     });
   }
 }
