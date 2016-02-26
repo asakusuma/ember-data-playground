@@ -1,5 +1,10 @@
 {{#each model.members as |member index|}}
   <div>
-    {{member.firstName}} {{member.lastName}}
+    <div>
+      <b>Name:</b> {{member.firstName}} {{member.lastName}}
+    </div>
+    <div>
+      <b>Company:</b> {{member.company.name}}
+    </div>
   </div>
 {{/each}}
